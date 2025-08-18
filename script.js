@@ -25,6 +25,7 @@ modeSwitch.addEventListener('change', () => {
     }
 });
 
+
 // Active Nav Link Highlight
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 const navLinks = document.querySelectorAll('.nav-links a');
