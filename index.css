@@ -67,7 +67,9 @@
         width: 150px; /* Rectangular width for mobile */
         height: 180px; /* Rectangular height for mobile */
         border-radius: 0; /* Rectangular shape for mobile */
-        margin-right: 15px; /* Space between image and nav links */
+        margin-right: 10px; /* Space between image and nav links */
+        display: block;
+        margin: 0 auto;
     }
 
     nav {
@@ -80,7 +82,7 @@
     }
 
     .logo {
-        margin: 0; /* Remove default margins */
+        margin: 10px 0; /* Remove default margins */
     }
 
     .nav-links {
