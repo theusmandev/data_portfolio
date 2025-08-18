@@ -4,7 +4,7 @@
 function createSnowflake() {
     const snowflake = document.createElement("div");
     snowflake.classList.add("snowflake");
-    snowflake.textContent = "❄";
+    snowflake.textContent = "🫧";
 
     snowflake.style.left = Math.random() * window.innerWidth + "px";
     snowflake.style.fontSize = Math.random() * 6 + 2 + "px";
