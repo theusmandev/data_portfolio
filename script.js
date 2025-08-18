@@ -8,7 +8,7 @@ function createSnowflake() {
 
     snowflake.style.left = Math.random() * window.innerWidth + "px";
     snowflake.style.fontSize = Math.random() * 6 + 2 + "px";
-    snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+    snowflake.style.animationDuration = Math.random() * 5 + 10 + "s";
 
     document.body.appendChild(snowflake);
 
