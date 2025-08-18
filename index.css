@@ -1,0 +1,54 @@
+/* Hero Section Styles */
+.hero {
+    background-image: url('images/hero.png'); /* Update path to your hero.png */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #0077cc;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
