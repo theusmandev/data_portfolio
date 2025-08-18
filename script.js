@@ -7,7 +7,7 @@ function createSnowflake() {
     snowflake.textContent = "❄";
 
     snowflake.style.left = Math.random() * window.innerWidth + "px";
-    snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
+    snowflake.style.fontSize = Math.random() * 6 + 2 + "px";
     snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
 
     document.body.appendChild(snowflake);
@@ -19,7 +19,7 @@ let snowInterval;
 
 function enableSnowfall() {
     if (!snowInterval) {
-        snowInterval = setInterval(createSnowflake, 200);
+        snowInterval = setInterval(createSnowflake, 300);
     }
 }
 
