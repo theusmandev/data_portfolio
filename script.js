@@ -28,29 +28,26 @@ function disableSnowfall() {
     snowInterval = null;
 }
 
-// === Dark/Light Mode Toggle ===
-const modeSwitch = document.getElementById('mode-switch');
-const body = document.body;
 
-// Load saved mode from localStorage
-if (localStorage.getItem('darkMode') === 'enabled') {
-    body.classList.add('dark');
-    modeSwitch.checked = true;
-    enableSnowfall(); // Dark mode ke sath snowfall bhi
-}
 
-modeSwitch.addEventListener('change', () => {
-    if (modeSwitch.checked) {
-        body.classList.add('dark');
-        localStorage.setItem('darkMode', 'enabled');
-        enableSnowfall();
-    } else {
-        body.classList.remove('dark');
-        localStorage.setItem('darkMode', 'disabled');
-        disableSnowfall();
-    }
+
+
+
+
+
+
+
+
+// === AOS Animation ===
+AOS.init({
+    duration: 1000,
+    once: true
 });
 
-
-
-
+// === Active Nav Link Highlight ===
+const currentPath = window.location.pathname;
+document.querySelectorAll('.nav-links a').forEach(link => {
+    if (currentPath.includes(link.getAttribute('href'))) {
+        link.classList.add('active');
+    }
+});

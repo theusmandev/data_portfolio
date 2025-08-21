@@ -33,3 +33,4 @@ function disableSnowfall() {
   clearInterval(snowInterval);
   snowInterval = null;
 }
+
